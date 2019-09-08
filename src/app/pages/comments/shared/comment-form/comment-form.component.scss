@@ -1,0 +1,21 @@
+$large-grid-gap: 16px;
+
+:host {
+  display: flex;
+  padding: $large-grid-gap;
+}
+
+.comment-form {
+  display: flex;
+  align-items: baseline;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.comment-submit {
+  flex-shrink: 0;
+  margin-left: $large-grid-gap;
+  text-transform: capitalize;
+}

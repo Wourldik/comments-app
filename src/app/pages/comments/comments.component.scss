@@ -1,0 +1,27 @@
+$x-large-grid-gap: 24px;
+$large-grid-gap: 16px;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: $large-grid-gap 0 $large-grid-gap $large-grid-gap;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.comment-text {
+  padding: $large-grid-gap;
+}
+
+.comment-card {
+  margin: $large-grid-gap 0 $large-grid-gap $large-grid-gap;
+  padding: $large-grid-gap 0 $large-grid-gap $large-grid-gap;
+}
+
+.comment-button {
+  text-transform: capitalize;
+}

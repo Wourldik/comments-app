@@ -1,0 +1,22 @@
+<form
+  class="comment-form full-width"
+  [formGroup]="form"
+  (ngSubmit)="onSubmit()"
+>
+  <mat-form-field class="full-width">
+    <textarea
+      matInput
+      placeholder="Leave a comment"
+      [formControl]="form.get(formKeys.text)"
+    ></textarea>
+  </mat-form-field>
+
+  <button
+    mat-flat-button
+    color="primary"
+    class="comment-submit"
+    [disabled]="invalid"
+  >
+    submit
+  </button>
+</form>
